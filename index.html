@@ -15,6 +15,24 @@
 
        <div id=""></div>
 
+       <form action="" method="get" name="greeting-card-options">
+           <label for="greeting-card-type">Select the type of card you want to create:</label>
+            <select name="greeting-card-type" id="greeting-card-type" autofocus required>
+                <option value="birthday">Birthday</option>
+                <option value="thank-you">Thank You</option>
+                <option value="sympathy">Sympathy</option>
+            </select>
+
+            <label for="recipient">Who is this card for?</label>
+            <input type="text" name="recipient" id="recipient" placeholder="Someone special..." required>
+
+            <label for="message">Add a personal note if you like:</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Optional personal note goes here..."></textarea>
+
+            <input type="submit" value="Create a Card">
+            <input type="reset" value="Start Over">
+        </form>
+
        <footer>&copy; 2018</footer>
        <script src="greetingCardMaker.js"></script>
    </body>
