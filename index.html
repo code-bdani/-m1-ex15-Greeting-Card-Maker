@@ -5,7 +5,8 @@
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <title>Greeting Card Maker Exercise</title>
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+       <link rel="stylesheet" type="text/css" media="screen" href="greetingCardMaker.css">
        <meta name="author" content="Brittany D. Smith">
    </head>
    <body>
@@ -16,7 +17,7 @@
        <div id=""></div>
 
        <form action="" method="get" name="greeting-card-options">
-           <label for="greeting-card-type">Select the type of card you want to create:</label>
+           <label for="greeting-card-type">Select the type of card:</label>
             <select name="greeting-card-type" id="greeting-card-type" autofocus required>
                 <option value="birthday">Birthday</option>
                 <option value="thank-you">Thank You</option>
@@ -29,8 +30,10 @@
             <label for="message">Add a personal note if you like:</label>
             <textarea name="message" id="message" cols="30" rows="5" placeholder="Optional personal note goes here..."></textarea>
 
-            <input type="submit" value="Create a Card">
-            <input type="reset" value="Start Over">
+            <div id="button-position">
+                <input type="submit" value="Create a Card" class="button">
+                <input type="reset" value="Start Over" class="button">
+            </div>
         </form>
 
        <footer>&copy; 2018</footer>
